@@ -1,0 +1,47 @@
+/* https://coolors.co/36151e-593f62-7b6d8d-8499b1-a5c4d4 */
+
+body {
+  font-family: 'Asap', sans-serif;
+}
+
+.social-icons img {
+  height: 50px;
+  width: 50px;
+}
+
+header, footer {
+  height: 100px;
+  width: 100%;
+  background-color: #A5C4D4;
+}
+
+header h1, header div {
+  display: inline-block;
+}
+
+header div {
+  display: flex;
+  justify-content: flex-end;
+  background-color: none;
+}
+
+header div a {
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+/*#headerBar {
+  background-color: gray;
+  height: 50px;
+  width: 100%;
+}*/
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  align-items: center;
+  padding: 1.5rem;
+}

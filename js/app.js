@@ -13,18 +13,18 @@ function config($stateProvider, $urlRouterProvider) {
  }).state('home.code', {
    url: 'code',
   //  controller: 'CodeController',
-   templateUrl: 'code.html'
+   templateUrl: 'html/code.html'
  }).state('home.illustrations', {
    url: 'illustrations',
   //  controller: 'IllustrationsController',
-   templateUrl: 'illustrations.html'
+   templateUrl: 'html/illustrations.html'
  }).state('home.science', {
    url: 'science',
   //  controller: 'ScienceController',
-   templateUrl: 'science.html'
+   templateUrl: 'html/science.html'
  }).state('home.writing', {
    url: 'writing',
   //  controller: 'WritingController',
-   templateUrl: 'writing.html'
+   templateUrl: 'html/writing.html'
  })
 }
