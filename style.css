@@ -2,6 +2,8 @@
 
 body {
   font-family: 'Asap', sans-serif;
+  margin: 0;
+  height: 100vh;
 }
 
 header {
@@ -12,17 +14,55 @@ header {
   margin: 0;
 }
 
-.social-icons img {
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.frogfriend {
+  height: 200px;
+  width: 225px;
+  border-radius: 20%;
+  margin-bottom: 10px;
+}
+
+section h3 {
+  margin-top: 0;
+}
+
+.links {
   height: 50px;
   width: 50px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact {
+  margin-top: 10px;
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
+  display: none;
+}
+
+.social-icons img {
+  height: 40px;
+  width: 40px;
 }
 
 .social-icons a {
   align-items: center;
-  padding: 1.5rem;
+  margin-left: 10px;
 }

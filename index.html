@@ -8,35 +8,44 @@
   </head>
   <body>
     <header></header>
-    <section class="overlay">
+    <section>
       <h1>Heather Stone | Portfolio</h1>
       <div>
-        <div>
-          <a ui-sref=".home">Home</a>
-          <a ui-sref=".home.code">Code</a>
-          <a ui-sref=".home.science">Science</a>
-          <a ui-sref=".home.writing">Writing</a>
-          <a ui-sref=".home.illustrations">Illustrations</a>
-        </div>
-        <div id="headerBar"></div>
+        <a ui-sref=".home">
+          <img src="images/links/home.png" class="links" alt="homepage link">
+        </a>
+        <a ui-sref=".home.code">
+          <img src="images/links/code.png" class="links" alt="link to code portfolio page">
+        </a>
+        <a ui-sref=".home.science">
+          <img src="images/links/science.png" class="links" alt="link to science page">
+        </a>
+        <a ui-sref=".home.writing">
+          <img src="images/links/writing.png" class="links" alt="link to writing page">
+        </a>
+        <a ui-sref=".home.illustrations">
+          <img src="images/links/illustrations.png" class="links" alt="link to illustrations page">
+        </a>
+      </div>
+      <div class="container">
+        <div ui-view></div>
       </div>
     </section>
-    <div class="container">
-      <div ui-view></div>
-    </div>
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js" charset="utf-8"></script>
      <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js" charset="utf-8"></script>
      <script src="js/app.js" charset="utf-8"></script>
      <script src="js/controllers/Home.controller.js" charset="utf-8"></script>
+     <script src="js/query.js" charset="utf-8"></script>
      <footer>
+       <h3 id="contact">Contact Me</h3>
        <div class="social-icons">
-         <a href="https://www.linkedin.com/in/heatherblairs"><img src="images/linkedin.png"></a>
-         <a href="https://www.facebook.com/yakfactorial"><img src="images/facebook.png"></a>
-         <a href="https://github.com/heatherblairs"><img src="images/github.png"></a>
-         <a href="mailto:heather.blair.stone@gmail.com"><img src="images/mail.png"></a>
-         <a href="https://twitter.com/heatherblairs"><img src="images/twitter.png"></a>
+         <a href="https://www.linkedin.com/in/heatherblairs"><img src="images/social-icons/linkedin.png"></a>
+         <a href="https://www.facebook.com/yakfactorial"><img src="images/social-icons/facebook.png"></a>
+         <a href="https://github.com/heatherblairs"><img src="images/social-icons/github.png"></a>
+         <a href="mailto:heather.blair.stone@gmail.com"><img src="images/social-icons/mail.png"></a>
+         <a href="https://twitter.com/heatherblairs"><img src="images/social-icons/twitter.png"></a>
        </div>
      </footer>
   </body>
