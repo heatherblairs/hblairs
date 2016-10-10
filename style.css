@@ -1,9 +1,11 @@
-/* https://coolors.co/36151e-593f62-7b6d8d-8499b1-a5c4d4 */
-
 body {
   font-family: 'Asap', sans-serif;
   margin: 0;
   height: 100vh;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
@@ -15,7 +17,7 @@ header {
 }
 
 
-section {
+.generalContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
