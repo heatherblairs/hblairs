@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 function clickContact(){
   $('#contact').click(function(){
-    $('.social-icons').toggle();
+    $('.socialIcons').toggle();
     $("html, body").animate({
       scrollTop: $(document).height()
     }, "slow");
