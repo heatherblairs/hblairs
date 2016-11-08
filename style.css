@@ -32,9 +32,14 @@ section h3 {
 .links {
   height: 50px;
   width: 50px;
-  display: inline-block;
   margin-right: 20px;
   margin-bottom: 20px;
+  display: inline-block;
+}
+
+.currentPage img {
+  background-color: rgba(50, 170, 30, 0.4);
+  border-radius: 10px;
 }
 
 footer {
@@ -42,6 +47,10 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+footer a {
+  color: #1E6912;
 }
 
 #contact {
