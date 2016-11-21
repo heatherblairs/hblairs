@@ -8,23 +8,23 @@ function config($stateProvider, $urlRouterProvider) {
  $stateProvider
  .state('home', {
    url: '/',
-   controller: mainController,
+   controller: 'mainController',
    templateUrl: 'home.html'
  }).state('home.code', {
    url: 'code',
-   controller: mainController,
+   controller: 'mainController',
    templateUrl: 'html/code.html'
  }).state('home.illustrations', {
    url: 'illustrations',
-   controller: mainController,
+   controller: 'mainController',
    templateUrl: 'html/illustrations.html'
  }).state('home.science', {
    url: 'science',
-   controller: mainController,
+   controller: 'mainController',
    templateUrl: 'html/science.html'
  }).state('home.writing', {
    url: 'writing',
-   controller: mainController,
+   controller: 'mainController',
    templateUrl: 'html/writing.html'
  })
 }
@@ -46,7 +46,7 @@ angular
                     if (-1 !== hrefs.indexOf(a.attr('href'))) {
                         a.parent().addClass('currentPage');
                     } else {
-                        a.parent().removeClass('currentPage');   
+                        a.parent().removeClass('currentPage');
                     };
                 });
             });
