@@ -26,6 +26,10 @@ function config($stateProvider, $urlRouterProvider) {
    url: 'writing',
    controller: 'mainController',
    templateUrl: 'html/writing.html'
+ }).state('home.podcast', {
+   url: 'podcast',
+   controller: 'mainController',
+   templateUrl: 'html/podcast.html'
  })
 }
 
