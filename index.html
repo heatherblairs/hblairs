@@ -1,39 +1,39 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="hstone">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Heather Stone | Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Asap|Flamenco" rel="stylesheet">
   </head>
-  <body>
+  <body ng-app="hblairs">
     <header></header>
     <section class="generalContent">
       <h1>Heather Stone | Portfolio</h1>
       <div class="navLinks" bs-active-link>
-        <a href="/home">
+        <a ui-sref="home" ui-sref-active="active">
           <img src="images/links/home.png" class="links" alt="homepage link">
         </a>
-        <a href="/code">
+        <a ui-sref="code" ui-sref-active="active">
           <img src="images/links/code.png" class="links" alt="link to code portfolio page">
         </a>
-        <a href="/science">
+        <a ui-sref="science" ui-sref-active="active">
           <img src="images/links/science.png" class="links" alt="link to science page">
         </a>
-        <a href="/writing">
+        <a ui-sref="writing" ui-sref-active="active">
           <img src="images/links/writing.png" class="links" alt="link to writing page">
         </a>
-        <a href="/illustrations">
+        <a ui-sref="illustrations" ui-sref-active="active">
           <img src="images/links/illustrations.png" class="links" alt="link to illustrations page">
         </a>
       </div>
       <div class="container">
-        <div ui-view></div>
+        <ui-view></ui-view>
       </div>
     </section>
     <footer>
       <h3 id="contact">
-        <a href="#contact">Contact Me</a>
+        <a href="#contact" ng-click="clickContact = true; scrollBottom()" ng-controller="mainCtrl">Contact Me</a>
       </h3>
       <div class="socialIcons">
         <a href="https://www.linkedin.com/in/heatherblairs"><img src="images/social-icons/linkedin.png"/></a>
@@ -48,7 +48,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js" charset="utf-8"></script>
      <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js" charset="utf-8"></script>
      <script src="js/app.js" charset="utf-8"></script>
-     <script src="js/controllers/mainController.js" charset="utf-8"></script>
+     <!-- <script src="js/controllers/mainController.js" charset="utf-8"></script> -->
      <script src="js/query.js" charset="utf-8"></script>
   </body>
 </html>

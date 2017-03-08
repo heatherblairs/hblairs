@@ -1,0 +1,19 @@
+{
+  "name": "hblairs",
+  "version": "1.0.0",
+  "description": "Personal portfolio site at heatherblairs.xyz.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heatherblairs/hblairs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heatherblairs/hblairs/issues"
+  },
+  "homepage": "https://github.com/heatherblairs/hblairs#readme"
+}

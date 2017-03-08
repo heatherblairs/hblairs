@@ -1,6 +1,5 @@
 $(document).ready(function(){
   clickContact();
-  showCurrentPage();
 })
 
 function clickContact(){
@@ -11,14 +10,4 @@ function clickContact(){
     }, "slow");
     return false;
   });
-}
-
-function showCurrentPage(){
-  $('.links').click(function(){
-    $(".navLinks [href]").each(function() {
-    if (this.href == window.location.href) {
-        $(this).addClass("currentPage");
-        }
-    });
-  })
 }
